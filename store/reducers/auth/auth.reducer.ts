@@ -1,4 +1,4 @@
-interface AuthState {
+export interface AuthState {
     loggedIn: boolean
 }
 
