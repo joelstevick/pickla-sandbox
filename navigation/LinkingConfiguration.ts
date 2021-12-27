@@ -17,12 +17,12 @@ const linking: LinkingOptions<RootStackParamList> = {
         screens: {
           Auth: {
             screens: {
-              AuthScreen: 'one',
+              AuthScreen: 'auth',
             },
           },
-          TabTwo: {
+          Crud: {
             screens: {
-              TabTwoScreen: 'two',
+              TabTwoScreen: 'crud',
             },
           },
         },

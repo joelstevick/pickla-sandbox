@@ -15,7 +15,7 @@ import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import AuthScreen from '../screens/AuthScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import CrudScreen from '../screens/CrudScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -85,10 +85,10 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoScreen}
+        name="Crud"
+        component={CrudScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Crud',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
