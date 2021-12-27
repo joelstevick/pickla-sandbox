@@ -1,15 +1,13 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Button } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import { View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
 export default function AuthScreen({ navigation }: RootTabScreenProps<'Auth'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Auth</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/AuthScreen.tsx" />
+      <Button onPress={() => {}} title='Login' />
     </View>
   );
 }
