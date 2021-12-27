@@ -18,6 +18,7 @@ import AuthScreen from '../screens/AuthScreen';
 import CrudScreen from '../screens/CrudScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import ListenScreen from '../screens/ListenScreen';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -89,6 +90,14 @@ function BottomTabNavigator() {
         component={CrudScreen}
         options={{
           title: 'Crud',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Listen"
+        component={ListenScreen}
+        options={{
+          title: 'Listen',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />

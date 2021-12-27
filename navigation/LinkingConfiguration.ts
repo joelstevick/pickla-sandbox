@@ -22,7 +22,12 @@ const linking: LinkingOptions<RootStackParamList> = {
           },
           Crud: {
             screens: {
-              TabTwoScreen: 'crud',
+              CrudScreen: 'crud',
+            },
+          },
+          Listen: {
+            screens: {
+              ListenScreen: 'listen',
             },
           },
         },
