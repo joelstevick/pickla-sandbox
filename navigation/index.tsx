@@ -89,7 +89,7 @@ function BottomTabNavigator() {
         name="Crud"
         component={CrudScreen}
         options={{
-          title: 'Crud',
+          title: 'Create | Update | Delete',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
@@ -97,7 +97,7 @@ function BottomTabNavigator() {
         name="Listen"
         component={ListenScreen}
         options={{
-          title: 'Listen',
+          title: 'Read | Listen',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
